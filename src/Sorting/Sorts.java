@@ -7,7 +7,6 @@ public class Sorts {
         for (int j = 1; j < array.length; j++) {
             for (int i = 1; i < array.length; i++) {
                 if (array[i - 1] > array[i]) {
-              
                     int temp = array[i - 1];
                     array[i - 1] = array[i];
                     array[i] = temp;
@@ -16,7 +15,7 @@ public class Sorts {
         }
     }
 
-    public static void inserSort(int[] array) {
+    public static void insertSort(int[] array) {
         for (int i = 1; i < array.length; i++) {
             int current = array[i];
             int j = i - 1;
