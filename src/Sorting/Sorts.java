@@ -5,7 +5,7 @@ import java.util.Random;
 public class Sorts {
     public static void bubblesort(int[] array) {
         for (int j = 1; j < array.length; j++) {
-            for (int i = j; i < array.length; i++) {
+            for (int i = 1; i < array.length; i++) {
                 if (array[i - 1] > array[i]) {
               
                     int temp = array[i - 1];
@@ -69,7 +69,7 @@ public class Sorts {
         shuffleArray(arrayToSort);
         printArray(arrayToSort);
         
-        selectSort(arrayToSort);
+        bubblesort(arrayToSort);
         printArray(arrayToSort);
     }   
 }
